@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+
+/* BASE ===================================================================== */
+
+
+
+
+html{font-size: 62.5%;}
+
+body {
+	font-size: 1.4em;
+	box-sizing: border-box;
+}
+::-moz-selection { background: #000; color: #fff;}
+::selection { background: #000; color: #fff;}
+
+audio,
+canvas,
+img,
+video { vertical-align: middle; }/*Remove the gap between images and the bottom of their containers: h5bp.com/i/440 */
+
+h1 {font-size:3em; line-height: 1.25em;}
+h2 {font-size:2.25em; line-height: 1.25em;}
+h3 {font-size:1.75em; line-height: 1.25em;}
+h3 {font-size:1.125em; line-height: 1.222;}
+h1,h2,h3 {margin:1em 0;}
+
+abbr,acronym { border-bottom:1px dotted #000; cursor:help;} 
+em {font-style: italic;}
+strong { font-weight: bold;}
+blockquote,ul,ol,dl {}
+
+dl dd {margin-left:1em;}
+th,td {border:0; padding:.5em;}
+th {font-weight:bold; text-align:center;}
+caption { margin-bottom:.5em; text-align:center;}
+p,fieldset,table {margin-bottom:1em;}
+textarea { resize: vertical;}/* Allow only vertical resizing of textareas.*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.hidden {display: none !important;visibility: hidden;}/* Hide from both screenreaders and browsers: h5bp.com/u*/
+.invisible {  visibility: hidden; }/* Hide visually and from screenreaders, but maintain layout */
+
+/* CLEARFIX  http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* For modern browsers */
+.clearfix:before, .clearfix:after {
+    content:"";
+    display:table;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    *zoom:1;
+}
+
+/* CSS para a Infografia */
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.definicao h2 {
+    text-align: center;
+    font-size:1.6em;
+    color: #CB4833;
+    font-family: 'Raleway', sans-serif;
+}
+.definicao p {
+    font-size:1.1em;
+    width:70%;
+    margin: auto;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+.definicao span {
+   color: #CB4833;
+    font-style: italic;
+}
+.atalhos ul {
+    margin-top: 20px;
+    display:inline;
+    width:40%;
+    margin:auto;
+}
+.atalhos li {
+    margin: 10px;
+    list-style-type: none;
+    text-align:center;
+    background-color:#CB4833;
+    height:50%;
+    padding:10px;
+    border: solid 1px #CB4833;
+}
+.atalhos a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif; 
+}
+.atalhos li:hover {
+    background-color: #68110F;
+    border: solid 1px #68110F;
+    transition: .25s all linear;
+}
+.mobile {
+    padding-top: 20px;
+}
+.desktop {
+    display: none;
+}
+
+#regras h2, #jogos-olimpicos h2, #paises-medalhados h2 {
+    text-align: center;
+    font-size:1.2em;
+    background-color: #CB4833;
+    color:aliceblue;
+    padding:10px;
+    font-family: 'Raleway', sans-serif;
+}
+#regras h3, .regulamento-simbolos h3, .distancias h3 {
+    color: #CB4833;
+    text-align: center;
+    font-size:1.2em;
+    font-family: 'Raleway', sans-serif;
+}
+#regras div, .regulamento-simbolos div {
+    background-color:#fff;
+     border: solid .5px #D8D8D8;
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:10px;
+}
+#regras p, .distancias p {
+    font-size:.96em;
+    width:80%;
+    margin: 20px;
+     text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+.regulamento-simbolos p {
+    padding: 10px;
+    font-size:.96em;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.regulamento-simbolos img {
+    width: 80%;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.distancias-info {
+	border: solid .5px #D8D8D8;
+	background-color:#fff;
+}
+
+.distancias > div  {
+	width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.distancias > div > .records:last-child {
+    float:right;
+}
+
+
+.records {
+	display: inline-block;
+	width: 35%;
+}
+
+.distancias h3 {
+    margin-left:10px;
+    margin-right:10px;
+}
+.dez-km p {
+    font-size:.96em;
+    text-align: center;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    background-color: #CB4833;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin:auto;  
+}
+.data p {
+    font-size:.96em;
+    text-align: center;
+    color:#fff;
+    font-family: 'Raleway', sans-serif;
+    background-color: #B2B2B2;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-left: auto;
+     margin-right: auto;
+    margin-top:auto;
+    margin-bottom: 10px;  
+}
+.distancias section {
+    display:inline-block;
+    width: 30%;
+    margin-left:65px;
+    margin-top:-10px;
+}
+#jogos-olimpicos nav {
+    display: none;
+}
+.classificacoes img {
+    width: 100%;
+    margin-left:auto; 
+    margin-right:auto; 
+    margin-top:-10px;}
+.classificacoes-desktop {
+    display:none;
+}
+#paises-medalhados span {
+    display: block;
+    width: 70%;
+    margin:auto;
+}
+#paises-medalhados div {
+    display:block;
+    width: 80%;
+    margin: auto;
+}
+#desktop-classificacao { 
+    display: none;
+}
+
+
+@media screen and (min-width: 480px) {
+    .atalhos ul {width: 20%;}
+    .atalhos li {width: 30%; margin-left:auto; margin-right:auto; margin-bottom:5px;}
+    #regras h3 {width: 80%;  margin-left:auto; margin-right:auto;}
+     #regras h2, #jogos-olimpicos h2, #paises-medalhados h2  { width: 40%; margin-left: auto; margin-right: auto;}
+    #regras div {width: 60%;}
+    #regras p, .regulamento-simbolos p {font-size: 1em; margin-left: auto; margin-right: auto;}
+    .regulamento-simbolos img {display: block; margin: auto; width: 50%;}
+    #jogos-olimpicos nav {display: none;}
+    .classificacoes img {width: 60%; margin-left:auto; margin-right:auto; margin-top:-10px;}
+    #paises-medalhados div { width: 40%;}
+    #paises-medalhados span { display: inline-block; width: 90%; margin-left: 80px;}
+    #paises-medalhados > span > img { width: 30%; }
+    #desktop-classificacao {display: none;}
+    .records {width:20%;}
+   
+    
+}
+
+@media screen and (min-width: 768px) {
+    .definicao p {width: 50%;}
+    .atalhos ul {width: 20%;}
+    .atalhos li {width: 30%; margin-left:auto; margin-right:auto; margin-bottom:5px;}
+    .mobile {display: none;}
+    .desktop {display: block;}
+    #regras h2, #jogos-olimpicos h2, #paises-medalhados h2  { width: 40%; margin-left: auto; margin-right: auto;}
+    #regras div {width: 60%;}
+    #regras p, .regulamento-simbolos p  {font-size: 1em; margin-left: auto; margin-right: auto;}
+    .regulamento-simbolos div {width:60%;}
+     #jogos-olimpicos nav {display:  block;}
+    .botoes img {width: 8%; border: solid 3px #CB4833;}
+    .botoes img:hover {opacity: 0.5;}
+    .botoes ul {width: 93%; display: table; text-align: center;}
+    .botoes li {list-style-type: none; margin:10px; display: inline;}
+    .classificacoes {display:none;}
+    .classificacoes-desktop {display:block; width: 70%; margin: auto;}
+    #paises-medalhados div {display: none;}
+    #paises-medalhados span { display: block; width: 75%; margin-left:120px;}
+    #desktop-classificacao { display: block; margin: auto; width: 65%;}
+    .distancias > div {width: 40%;}
+    .records {width:20%;}
+}
+
+@media screen and (min-width: 1024px) {
+    .definicao h2 {font-size: 1.75em;}
+    .definicao p {width: 50%; font-size: 1.1em; margin-bottom:20px;}
+    .atalhos ul {width: 20%;}
+    .atalhos li {width: 30%; margin-left:auto; margin-right:auto; margin-bottom:5px;}
+    .mobile {display: none;}
+    .desktop {display: block;}
+    #regras h2, #jogos-olimpicos h2, #paises-medalhados h2  {font-size:1.3em; width: 40%; margin-left: auto; margin-right: auto;}
+    #regras div, .distancias > div {width: 60%;}
+    #regras p, .regulamento-simbolos p, .distancias-info: p {font-size: 1em; margin-left: auto; margin-right: auto;}
+    .regulamento-simbolos div {margin-left: 20px; width:25%; display: inline-block; margin-right: 10px;}
+   .regulamento-simbolos img {width: 25%; display:inline; margin: auto; margin-left:60px;}
+    .regulamento-simbolos span {width: 100%; display: block; margin-left:60px;}
+    .botoes nav {display:  block;}
+    .botoes img {width: 8%; border: solid 3px #CB4833;}
+    .botoes img:hover {opacity: 0.5;}
+    .botoes ul {width: 93%; display: table; text-align: center;}
+    .botoes li {list-style-type: none; margin:10px; display: inline;}
+    .classificacoes {display:none;}
+    .classificacoes-desktop {display:block; width:45%; margin: auto;}
+    #paises-medalhados div {display: none;}
+    #paises-medalhados span { display: block; width: 60%; margin-left:300px;}
+    #desktop-classificacao { display: block; margin: auto; width: 40%;}
+    .distancias > div {width: 40%;}
+    .records {width:20%;}
+}
