@@ -243,6 +243,49 @@ body {
     display: none;
 }
 
+
+@media screen and (max-width: 479px) {
+    .atalhos ul {width: 20%;}
+    .atalhos li {width: 30%; margin-left:auto; margin-right:auto; margin-bottom:5px;}
+    #regras h3 {width: 80%;  margin-left:auto; margin-right:auto;}
+     #regras h2, #jogos-olimpicos h2, #paises-medalhados h2  { width: 40%; margin-left: auto; margin-right: auto;}
+    #regras div {width: 60%;}
+    #regras p, .regulamento-simbolos p {font-size: 1em; margin-left: auto; margin-right: auto;}
+    .regulamento-simbolos img {display: block; margin: auto; width: 50%;}
+    #jogos-olimpicos nav {display: none;}
+    .classificacoes img {width: 60%; margin-left:auto; margin-right:auto; margin-top:-10px;}
+    #paises-medalhados div { width: 40%;}
+    #paises-medalhados span { display: inline-block; width: 90%; margin-left: 80px;}
+    #paises-medalhados > span > img { width: 30%; }
+    #desktop-classificacao {display: none;}
+    .records {width:20%;} 
+}
+
+@media screen and (max-width: 767px) {
+    .definicao p {width: 50%;}
+    .atalhos ul {width: 20%;}
+    .atalhos li {width: 30%; margin-left:auto; margin-right:auto; margin-bottom:5px;}
+    .mobile {display: none;}
+    .desktop {display: block;}
+    #regras h2, #jogos-olimpicos h2, #paises-medalhados h2  { width: 40%; margin-left: auto; margin-right: auto;}
+    #regras div {width: 60%;}
+    #regras p, .regulamento-simbolos p  {font-size: 1em; margin-left: auto; margin-right: auto;}
+    .regulamento-simbolos div {width:60%;}
+     #jogos-olimpicos nav {display:  block;}
+    .botoes img {width: 8%; border: solid 3px #CB4833;}
+    .botoes img:hover {opacity: 0.5;}
+    .botoes ul {width: 93%; display: table; text-align: center;}
+    .botoes li {list-style-type: none; margin:10px; display: inline;}
+    .classificacoes {display:none;}
+    .classificacoes-desktop {display:block; width: 70%; margin: auto;}
+    #paises-medalhados div {display: none;}
+    #paises-medalhados span { display: block; width: 75%; margin-left:120px;}
+    #desktop-classificacao { display: block; margin: auto; width: 65%;}
+    .distancias > div {width: 40%;}
+    .records {width:20%;}
+}
+
+
 @media screen and (min-width: 1024px) {
     .definicao h2 {font-size: 1.75em;}
     .definicao p {width: 50%; font-size: 1.1em; margin-bottom:20px;}
